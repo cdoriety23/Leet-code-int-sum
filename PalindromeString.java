@@ -30,7 +30,7 @@ public class PalindromeString {
 			{
 				char letter= s.charAt(i); //each letter is a character in the original "string"
 				
-				if((letter>='a' && letter <='z'));
+				if((letter>='a' && letter <='z'))
 				{
 				original.append(letter);// creating a string by adding characters
 				stack.push(letter);// pushing all letters to stack
