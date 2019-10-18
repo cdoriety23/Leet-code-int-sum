@@ -1,3 +1,5 @@
+//inputting a string with multiple words with spaces, this program splits each word at a space and returns the length of the last word
+
 public class LastWordValue {
 	
 	String word;
