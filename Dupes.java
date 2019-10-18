@@ -2,8 +2,8 @@ import java.util.LinkedList;
 import java.util.List;
 public class Dupes{
 	
+//Deleting an element from a Linkedlist-Leetcode problem 
 
-// LeetCode Problem that looks for dupes in a LinkedList
 }
 public static class ListNodedeleteDuplicates(ListNode head) 
 	{
