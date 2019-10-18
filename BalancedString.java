@@ -1,4 +1,4 @@
-// Balanced Strings are those who have equal quantity of 'L' and 'R' characters
+// Balanced Strings are those who have equal quantity of 'L' and 'R' characters in each substring
 // returns the numbers of substrings in the string
 
 public class BalancedString{
