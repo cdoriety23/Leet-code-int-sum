@@ -1,3 +1,5 @@
+//deletes an element from a an array
+
 public class DeleteElement {
 
 	int number=0;
