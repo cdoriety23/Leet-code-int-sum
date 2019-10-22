@@ -11,8 +11,8 @@ public class LastWordValue {
 
 	public int Value()
 	{
-		String [] wordspace = word.split(" ");// splits word at white space
-		String a=  (wordspace [wordspace.length-1]) ;// this is the last last 			element in the split array
+		String [] wordspace = word.split(" ");// splits word at white space and places them in an  array
+		String a=  (wordspace [wordspace.length-1]) ;// this is the last element in the split array
 		
 		for(int i= 0; i<wordspace.length;i++)
 			{
