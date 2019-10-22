@@ -5,13 +5,9 @@ public class ShortestPath {
 	public static void main(String args[])
 	{
 		System.out.println(uniquePaths(7,3));// 28
-	
-	
-	
 	}
 	
 	public static int uniquePaths(int m, int n)
-	
 	{
 		int[][] sp=new int[m][n];
 		{
