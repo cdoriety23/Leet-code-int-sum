@@ -1,6 +1,6 @@
 import java.util.LinkedList;
 
-// this class will return true or false if the string entered is a palindrome
+// this class will return true or false if the string entered is a palindrome(meaning it is the same read from front or back)
 public class PalindromeString {
 
 	
