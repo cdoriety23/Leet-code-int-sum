@@ -1,4 +1,4 @@
-package com.company;
+//problem that finds the greatest sum of a subarray
 
 public class MaxSum {
 
