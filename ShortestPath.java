@@ -1,4 +1,4 @@
-// robot unique path problem for leetcode
+// robot unique path problem from leetcode
 
 public class ShortestPath {
 	
