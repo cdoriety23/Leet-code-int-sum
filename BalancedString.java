@@ -1,42 +1,40 @@
-// Balanced Strings are those who have equal quantity of 'L' and 'R' characters in each substring
-// returns the numbers of substrings in the string
+package com.company;
 
-public class BalancedString{
-	
-	public static void main(String args[])
-	{
-		String a = "RLRLLRLRLR"; // return 5;
-		String b= "RLLLLRRRLR"; // return 3;
-		System.out.println(balancedStringSplit(a));
-		System.out.println(balancedStringSplit(b));
-	}
-	
-	static int balancedStringSplit(String s) {
-	      int countR=0;
-	        int countL=0;
-	       int  mainCount=0;
-	        char [] word = s.toCharArray();// puts string in a character array
-	        
-	        for(int i=0; i<word.length; i++)
-	        {
-	            if(word[i]=='R')// the letter is R increment the counter R 
-	            {
-	                countR++;
-	            }
-	            else
-	            {
-	                countL++; 
-	            }
-	            
-	            if(countL==countR)
-	            {
-	                mainCount++;
-	                countR=0;
-	                countL=0;
-	            }
-	        }return mainCount;
-	        
-	        
-	    }
-	}
+import java.util.Stack;
 
+public class Main {
+
+    public static void main(String[] args) {
+	    System.out.println(isValid("{{[[((}}}))")); //false
+        System.out.println(isValid("{{{(}}})"));//false
+        System.out.println(isValid("()[]{}"));//true
+        System.out.println(isValid("{[]}"));//true
+    }
+    public static boolean isValid(String s) {
+        Stack<Character> stack = new Stack<Character>();
+        if (s.equals("")) return true;
+        for (char ch : s.toCharArray()) {
+            if (ch == '(' || ch == '[' || ch == '{') {
+                stack.push(ch);
+            } else if (ch == ')') {
+                if (stack.empty() || stack.pop() != '(')
+                    return false;
+            } else if (ch == ']') {
+                if (stack.empty() || stack.pop() != '[')
+                    return false;
+            } else if (ch == '}') {
+                if (stack.empty() || stack.pop() != '{')
+                    return false;
+            }
+        }
+        return stack.empty();
+
+
+    }
+
+
+
+
+
+
+}
