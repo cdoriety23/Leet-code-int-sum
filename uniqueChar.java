@@ -28,7 +28,7 @@ public class uniqueChar {
                         tracker.put(c, 1);
                     }
                 }
-
+                    //prints index of first unique character
                     for(int i=0; i<s.length(); i++)
                     {
                         char c= s.charAt(i);
