@@ -3,15 +3,15 @@ public class LinkedLoop {
         public boolean isLoop(ListNode head) {
 
 
-            ListNode slow = head;
-            ListNode fast = head;
+            ListNode p1 = head;// first pointer
+            ListNode p2 = head;// second pointer
 
-            while(fast != null && fast.next !=null)
+            while(p2 != null && p2.next !=null)
             {
-                slow = slow.next;
-                fast = fast.next.next;
+                p1 = p1.next;
+                p2 = p2.next.next;
 
-                if(slow == fast)
+                if(p1 == p2)
                 {
                     return true;
                 }
