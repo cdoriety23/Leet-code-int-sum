@@ -1,4 +1,4 @@
-public class SwithValues {
+public class SwitchValues {
 
 
     public static void main(String args[])
