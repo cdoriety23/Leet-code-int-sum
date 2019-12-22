@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class TwoSum {
+public class TwoSumOptimized {
 
 
     public static void main(String args[]) {
