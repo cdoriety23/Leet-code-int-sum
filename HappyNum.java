@@ -15,9 +15,7 @@ public class HappyNum {
 
         public  static boolean isHappy(int n) {
             HashSet<Integer> set = new HashSet<Integer>();
-            if(n == 1) {
-                return true;
-            }
+         
             while(set.add(n)) {
                 int sum = 0;
                 while(n > 0) {
