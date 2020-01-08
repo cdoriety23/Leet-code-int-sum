@@ -3,7 +3,7 @@
 public class MaxSum {
 
     public static void main(String args[]) {
-        int a[] = {-2, 1, -3, 4, -1, 2, 1 ,- 5, 4}; // answer should be 6 using element 4,2,1,-1
+        int a[] = {-2, 1, -3, 4, -1, 2, 1 ,- 5, 4}; // answer should be 6 using only element 4,2
         int b[] = {4,3,1,-5,-2,1};// answer is 8 using elements 4,3,1
         System.out.println(maxSubArray(a));
         System.out.println(maxSubArray(b));
